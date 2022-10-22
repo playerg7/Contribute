@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PASSWORD GENERATOR</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="heading">Password Generator</header>
+    <!-- <img class="bubble" src="images/bubble.png" /> -->
+    <section class="mobile">
+      <img class="image" src="images/passward.png" alt="illustration" />
+      <div class="generated-password">
+        <div class="pass">
+          <p class="star">********</p>
+          <span class="material-symbols-outlined" id="copy"> content_copy </span>
+        </div>
+        <p class="Copy-Password">Copied!</p>
+      </div>
+      <p class="set">Settings</p>
+    </section>
+
+    <section class="Settings">
+      <div class="settings2">
+        <div class="length1">
+          <p class="length2">Length</p>
+          <input type="number" value="8" id="quantity" min="5" max="20" /><span class="ok">OK</span>
+
+          </span>
+        </div>
+        <div class="upper" id="uppercase">
+          <p class="case">Include Uppercase</p>
+          <label class="switch">
+            <input class="up" type="checkbox" />
+            <span class="slider round" </span>
+          </label>
+        </div>
+        <div class="upper" id="lowercase">
+          <p class="case">Include Lowecase</p>
+          <label class="switch">
+            <input id="low" type="checkbox" />
+            <span class="slider round" ></span>
+          </label>
+        </div>
+        <div class="upper" id="num">
+          <p class="case">Include Numbers</p>
+          <label class="switch">
+            <input id="no" type="checkbox" />
+            <span class="slider round" ></span>
+          </label>
+        </div>
+        <div class="upper" id="sym">
+          <p class="case">Include Symbols</p>
+          <label class="switch"> 
+            <input id="bol" class="check" type = "checkbox" />
+            <span class="slider round" ></span>
+          </label>
+        </div>
+      </div>
+      <div class="button" id="generated-password">
+        <p class="generate" id="processing">GENERATE PASSWORD</p>
+        <p class="generate" id="done">GENERATE AGAIN </p>
+      </div>
+    </section>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
